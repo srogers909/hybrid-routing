@@ -6,7 +6,7 @@ import { Home } from './home/home.component';
 
 import './app.less';
 
-export let app = module('app', [ 'ui.router' ])
+export let app = module('app', [ 'ui.router', 'ui.router.upgrade' ])
     .config(['$stateProvider', '$urlRouterProvider',
         ($stateProvider: ng.ui.IStateProvider, $urlRouterProvider: ng.ui.IUrlRouterProvider) => {
             $stateProvider
