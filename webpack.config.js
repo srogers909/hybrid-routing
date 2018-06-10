@@ -11,7 +11,7 @@ module.exports = {
         app: ['./app/app.ts'],
         vendor: [
             'angular/angular.js',
-            'angular-ui-router/release/angular-ui-router.js',
+            '@uirouter/angular-hybrid/_bundles/ui-router-angular-hybrid',
             'angular-sanitize'
         ]
     },

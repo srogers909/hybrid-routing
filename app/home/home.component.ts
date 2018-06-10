@@ -11,11 +11,11 @@ export namespace Home {
         }
 
         public $onInit(): void {
-            this.log.Log('Hey, I\'m an instance of the Logger Service. Neat.');
+            this.log.Log('Hey, I\'m an instance of the Logger Service. Neat. Short lifespan, though.');
         }
 
         public $onDestroy(): void {
-            this.log.Log('Well, this is the end for me. oddly, another version of me will return someday.');
+            this.log.Log('Well, this is the end for me. Off to de-allocation. Oddly, another version of me will return someday.');
         }
     }
 

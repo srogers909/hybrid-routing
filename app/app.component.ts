@@ -2,7 +2,7 @@ export namespace App {
     class AppController implements ng.IController {
         static $inject: string[] = ['$state', '$timeout'];
 
-        constructor(public $state: ng.ui.IStateService, public $timeout: ng.ITimeoutService) {
+        constructor($state: ng.ui.IStateService, $timeout: ng.ITimeoutService) {
             $timeout(() => {
                 $state.go('app.home');
             }, 0, false);
