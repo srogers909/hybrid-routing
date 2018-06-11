@@ -4,6 +4,7 @@ import { Services } from './services/logger.services';
 import { Todo } from './todo/todo.controller';
 import { App } from './app.component';
 import { Home } from './home/home.component';
+import { TodoItemComponent } from './todoItem/todoItem.component';
 
 import './app.less';
 
@@ -26,6 +27,11 @@ export let app = module('app', [ 'ui.router', 'ui.router.upgrade' ])
                     name: 'app.home',
                     url: '/home',
                     component: Home.HomeComponent.NAME
+                })
+                .state({
+                    name: 'app.todoItem',
+                    url: '/todoItem',
+                    component: TodoItemComponent
                 });
 
             $urlRouterProvider.otherwise('/app');

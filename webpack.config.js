@@ -8,7 +8,7 @@ const path = require('path'),
 module.exports = {
     mode: 'development',
     entry: {
-        app: ['./app/app.ts'],
+        app: ['./app/main.ts'],
         vendor: [
             'angular/angular.js',
             '@uirouter/angular-hybrid/_bundles/ui-router-angular-hybrid',
