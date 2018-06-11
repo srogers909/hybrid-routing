@@ -2,13 +2,12 @@ const path = require('path'),
     webpack = require('webpack'),
     nodeModulesDir = path.resolve(__dirname, './node_modules'),
     CopyWebpackPlugin = require('copy-webpack-plugin'),
-    LoaderOptionsPlugin = require("webpack/lib/LoaderOptionsPlugin"),
     CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
     mode: 'development',
     entry: {
-        app: ['./app/main.ts'],
+        app: ['./src/main.ts'],
         vendor: [
             'angular/angular.js',
             '@uirouter/angular-hybrid/_bundles/ui-router-angular-hybrid',
@@ -66,7 +65,7 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(['dist']),
         new webpack.optimize.SplitChunksPlugin({ name: 'vendor', filename: 'vendor.js' }),
-        new CopyWebpackPlugin([{ from: './app/index.html', to: './index.html' }])
+        new CopyWebpackPlugin([{ from: './src/index.html', to: './index.html' }])
     ],
     resolve: {
         extensions: ['.tsx', '.ts', '.js']

@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@angular/cli": "^6.0.8",
     "@types/angular": "^1.6.45",
     "@types/angular-ui-router": "^1.1.40",
     "@types/angularjs": "^1.5.14-alpha",
@@ -47,6 +48,7 @@
     "@angular/upgrade": "^6.0.4",
     "@uirouter/angular-hybrid": "^6.0.0",
     "@uirouter/core": "^5.0.19",
+    "@uirouter/visualizer": "^6.0.0",
     "angular": "^1.7.1",
     "angular-sanitize": "^1.7.1",
     "angular-ui-bootstrap": "^2.5.6",
