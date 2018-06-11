@@ -1,5 +1,5 @@
 // app.ts
-import { module, bootstrap } from 'angular';
+import { module } from 'angular';
 import { Services } from './services/logger.services';
 import { Todo } from './todo/todo.controller';
 import { App } from './app.component';
@@ -44,5 +44,3 @@ export let angularJSModule = module('app', [ 'ui.router', 'ui.router.upgrade' ])
 
 const traceRunBlock = ['$trace', $trace => { $trace.enable(1); }];
 angularJSModule.run(traceRunBlock);
-
-(() => {  bootstrap(document, ['app']); })();
